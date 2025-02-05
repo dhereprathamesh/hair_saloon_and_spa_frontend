@@ -1,0 +1,36 @@
+/* Global Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Global Styles for Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional global styles */
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+/* Scrollbar and focus ring resets */
+::-webkit-scrollbar {
+  display: none;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
