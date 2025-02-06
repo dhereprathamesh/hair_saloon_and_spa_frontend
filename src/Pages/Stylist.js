@@ -1,5 +1,5 @@
 import React from "react";
-import "./stylist.css";
+import "../assets/styles/stylist.css";
 
 const Stylist = () => {
   return (

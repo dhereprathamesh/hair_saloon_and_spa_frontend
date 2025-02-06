@@ -1,5 +1,5 @@
 import React from "react";
-import "./bookAppointment.css";
+import "../assets/styles/bookAppointment.css";
 
 const BookAppointment = () => {
   return (

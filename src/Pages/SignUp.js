@@ -1,6 +1,7 @@
 import React from "react";
-import "./signUp.css";
+import "../assets/styles/signUp.css";
 import { useNavigate } from "react-router-dom";
+import Input from "../components/common/Input";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -18,53 +19,26 @@ const SignUp = () => {
             </h2>
             <form className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label className="block text-sm font-medium">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all"
-                    placeholder="John"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="block text-sm font-medium">Last Name</label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all"
-                    placeholder="Doe"
-                  />
-                </div>
+                <Input label="First Name" type="text" placeholder="John" />
+                <Input label="Last Name" type="text" placeholder="Doe" />
               </div>
-              <div className="space-y-2">
-                <label className="block text-sm font-medium">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all"
-                  placeholder="john.doe@example.com"
-                />
-              </div>
-              <div className="space-y-2">
-                <label className="block text-sm font-medium">Password</label>
-                <input
-                  type="password"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all"
-                  placeholder="Create a password"
-                />
-              </div>
-              <div className="space-y-2">
-                <label className="block text-sm font-medium">
-                  Confirm Password
-                </label>
-                <input
-                  type="password"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all"
-                  placeholder="Confirm your password"
-                />
-              </div>
+
+              <Input
+                label="Email Address"
+                type="email"
+                placeholder="john.doe@example.com"
+              />
+              <Input
+                label="Password"
+                type="password"
+                placeholder="Create a password"
+              />
+              <Input
+                label="Confirm Password"
+                type="password"
+                placeholder="Confirm your password"
+              />
+
               <div className="flex items-center gap-2">
                 <input
                   type="checkbox"

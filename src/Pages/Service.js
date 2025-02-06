@@ -1,5 +1,5 @@
 import React from "react";
-import "./Service.css";
+import "../assets/styles/Service.css";
 const Service = () => {
   return (
     <div id="webcrumbs">
